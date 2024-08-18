@@ -1,0 +1,199 @@
+.prodict-details-section {
+  display: flex;
+  align-items: center;
+}
+.product-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px var(--style-color), inset 0 0 10px var(--style-color);
+  border: 2px solid var(--style-color);
+  border-radius: 32px;
+  gap: 55px;
+  padding: 55px;
+}
+.product-details .main-image {
+  width: 100%;
+}
+.product-details .main-image img {
+  width: 450px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 26px;
+}
+.product-details .more-images {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+.product-details .more-images img {
+  width: 140px;
+  height: 100%;
+  border-radius: 20px;
+}
+.product-details .more-info p.brand {
+  color: var(--style-color);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+  line-height: 0.7em;
+  margin-bottom: 15px;
+}
+.product-details .more-info h2.name {
+  font-size: 34px;
+  font-weight: 500;
+}
+.product-details .more-info p.type {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.product-details .more-info p.price {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.product-details .more-info p.info {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.product-details .more-info .season {
+  display: flex;
+  margin-bottom: 5px;
+}
+.product-details .more-info .product-code {
+  margin-bottom: 30px;
+}
+.product-details .more-info a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--style-color);
+  border: var(--style-color) 0.125em solid;
+  box-shadow: inset 0 0 0.5em 0 var(--style-color), 0 0 0.5em 0 var(--style-color);
+  border-radius: 0.45em;
+  padding: 4px 24px;
+}
+.product-details .more-info a::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--style-color);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+.product-details .more-info a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.2em var(--style-color);
+  opacity: 0;
+  background-color: var(--style-color);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+.product-details .more-info a:hover,
+.product-details .more-info a:focus {
+  color: #141414;
+  text-shadow: none;
+  background: var(--style-color);
+}
+.product-details .more-info a:hover::before,
+.product-details .more-info a:focus::before {
+  opacity: 1;
+}
+.product-details .more-info a:hover::after,
+.product-details .more-info a:focus::after {
+  opacity: 1;
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 1150px) {
+  .product-details {
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .product-details .main-image img {
+    width: 586px;
+    height: 320px;
+  }
+  .product-details .more-images {
+    width: 586px;
+    margin-top: 10px;
+  }
+  .product-details .more-images img {
+    width: 180px;
+  }
+  .product-details .more-info .season {
+    justify-content: center;
+  }
+  .product-details .more-info a {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .product-details {
+    width: 330px;
+    border-radius: 22px;
+    padding: 20px 20px 25px 20px;
+    gap: 20px;
+  }
+  .product-details .main-image img {
+    width: 286px;
+    height: 180px;
+    border-radius: 20px;
+  }
+  .product-details .more-images {
+    width: 286px;
+    margin-top: 3px;
+  }
+  .product-details .more-images img {
+    width: 90px;
+    border-radius: 16px;
+  }
+  .product-details .more-info p.brand {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+  .product-details .more-info h2.name {
+    font-size: 23px;
+  }
+  .product-details .more-info p.type {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .product-details .more-info p.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .product-details .more-info p.info {
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  .product-details .more-info .season {
+    display: none;
+  }
+  .product-details .more-info .product-code {
+    display: none;
+  }
+  .product-details .more-info a {
+    font-size: 14px;
+    padding: 4px 24px;
+  }
+}
