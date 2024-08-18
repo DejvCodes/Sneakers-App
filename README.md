@@ -11,7 +11,7 @@
 [![My Skills](https://skillicons.dev/icons?i=html,css,javascript,react)](https://skillicons.dev)
 
 ## 🌐 Link
-<a href="https://app-dejvcodes.netlify.app/">Sneakers App</a>
+<a href="https://sneakers-app-dejvcodes.netlify.app/">Sneakers App</a>
 
 ## License🔐
 [MIT License](LICENSE) 
