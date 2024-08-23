@@ -193,7 +193,7 @@ const data = [
       "https://cdn.myshoptet.com/usr/www.sneakerstore.cz/user/shop/big/3337-3_adidas-campus-00s-wmns-green-cloud-white-20582297-45675381-2048.png?662f68c8",
     ],
     season: ["Jaro"],
-    info: "Adidas YEEZY Boost 350 V2 Carbon Beluga staví na původní barvě Beluga přidáním skvrnitých oranžových akcentů na svršek Primeknit. Design doplňují výrazné detaily, jako je podrážka Boost a oranžový boční pruh. Adidas YEEZY Boost 350 V2 Carbon Beluga vyšly v květnu 2023.",
+    info: "Tato kolekce je součástí sportovního sortimentu této značky a nabízí elegantní varianty v zelené a bílé barvě. Tato teniska je vyrobena z kvalitních materiálů, jako je semiš, guma a kůže, což zaručuje nejvyšší úroveň komfortu. Logo adidas je umístěno na jazyku a patě a doplňuje ho branding Campus na boční straně tenisky.",
     productCode: "ID7029",
     styleColor: "#259b70",
   },
